@@ -1,83 +1,38 @@
-/* リセットCSS */
-* {
-  box-sizing: border-box;
+.title-contents {
+  position:relative;
+  width:100vw;
+  height:100vh;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(top.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  margin:0;
+  padding:0;
 }
 
-html,
-body,
-ul,
-li,
-h1,
-h2,
-p,
-div {
-  margin: 0;
-  padding: 0;
+h2 {
+  position: fixed;
+  color: white;/*文字は白に*/
+  font-weight: bold; /*太字に*/
+  font-size: 2em;/*サイズ2倍*/
+  font-family :Quicksand, sans-serif;/*Google Font*/
+  top: 0;
+  left: 0;
+  margin:0;
+  padding:0;
 }
 
-body {
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
-  color: #3b4043;
-}
 
-li {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-}
-
-a {
-  text-decoration: none;
-  color: #3b4043;
-}
-
-/* ヘッダー */
-
-.header {
-  background-color: #FFE4B5;
-  margin-bottom: 48px;
-  padding: 20px 0;
-
-}
-.inner {
-  width: 1024px;
-  margin: 0 auto;
-}
-.nav {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-.logo {
-  width: 200px;
-}
-.nav__btn{
-  display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #7FFFD4;
-  text-decoration: none;
-  user-select: none;
-  border: 1px #7FFFD4 solid;
-  border-radius: 3px;
-  transition: 0.4s ease;
-}
-.nav__btn:hover{
-  color: #fff;
-  background: #7FFFD4;
-}
-
-.nav__logout{
-  display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #87CEFA;
-  text-decoration: none;
-  user-select: none;
-}
-.nav__logout:hover{
-  opacity: 0.5;
+p {
+  position: absolute;
+  color: white;/*文字は白に*/
+  font-weight: bold; /*太字に*/
+  font-family :Quicksand, sans-serif;/*Google Font*/
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
 }
